@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <!--        xoa chay lai tu dau-->
+        <!--        <property name="hbm2ddl.auto">create-drop</property>-->
+<!--        cap nhap thong tin moi-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+<!--                Mapping-->
+
+<!--        <mapping class="model.Bai1_2_CRUD.Cat"/>-->
+<!--        <mapping class="model.Bai3_1vs1.Person"/>-->
+<!--        <mapping class="model.Bai4_nvs1.Author"/>-->
+<!--        <mapping class="model.Bai4_nvs1.Book"/>-->
+<!--        <mapping class="model.Bai5_1vsn.Customer"/>-->
+<!--        <mapping class="model.Bai5_1vsn.Oder"/>-->
+<!--        <mapping class="model.Bai6_nvsn.NhanVien"/>-->
+<!--        <mapping class="model.Bai6_nvsn.CuocHop"/>-->
+<!--        <mapping class="model.Bai7_inheritance.ConNguoi"/>-->
+<!--        <mapping class="model.Bai7_inheritance.GiaoVien"/>-->
+<!--        <mapping class="model.Bai7_inheritance.SinhVien"/>-->
+        <mapping class="model.Bai9_Lazy_Eager.DonHang"/>
+        <mapping class="model.Bai9_Lazy_Eager.ChiTietDonHang"/>
+    </session-factory>
+</hibernate-configuration>

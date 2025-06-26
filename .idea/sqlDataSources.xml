@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="a517c1d6-7ff9-4603-b4ab-3ee4dcf16f1c" name="Cat@localhost Mapping">
+      <data-sources db="fcf572f3-d340-4b42-aa5d-968d18049420" />
+      <scope>
+        <node kind="schema" qname="cat" />
+      </scope>
+    </mapping>
+  </component>
+</project>
